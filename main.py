@@ -24,9 +24,9 @@ def index(elemento, lista):
             return i
 
 
-def printa_essa_porra(vinhos, precos):
+def printa_essa_porra(vinhos, precos, quantidade):
     for i in range(len(vinhos)):
-        print(f'{vinhos[i]}: R${precos[i]:.2f}')
+        print(f'{vinhos[i]}: R${precos[i]:.2f} -- {qtd[i]} Quantidade no Carrinho')
 
 
 # Código pra valer
@@ -67,7 +67,7 @@ else:
             continue
         else:
             print('------------------ CARRINHO ---------------------')
-            printa_essa_porra(vinhos, precos)
+            printa_essa_porra(vinhos, precos, qtd)
             print(f'\n SUBTOTAL: R${preco + aux:.2f}\n\n')
 
             if preco + aux > frete_gratis:
