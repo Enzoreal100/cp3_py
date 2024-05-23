@@ -12,7 +12,7 @@ def verifica_numero(msg):
 def forca_escolhe(msg, disponiveis, erro):
     escolha = input(msg)
     while escolha not in disponiveis:
-        print(erro)
+        print(erro, disponiveis)
         escolha = input(msg)
         continue
     return escolha
